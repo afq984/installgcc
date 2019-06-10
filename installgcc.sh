@@ -7,6 +7,6 @@ cd gcc-"$version"
 cd ..
 mkdir gcc-"$version"-build
 cd gcc-"$version"-build
-$PWD/../gcc-"$version"/configure --prefix=$HOME/toolchains --enable-languages=c,c++,fortran --disable-multilib
+$PWD/../gcc-"$version"/configure --prefix=$HOME/toolchains/gcc-"$version" --enable-languages=c,c++,fortran --disable-multilib
 make -j$(nproc)
 make install
