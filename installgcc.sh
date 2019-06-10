@@ -1,7 +1,7 @@
 set -eux
 version="$1"
-wget -c https://ftp.gnu.org/gnu/gcc/gcc-"$version"/gcc-"$version".tar.bz2
-tar -xjf gcc-"$version".tar.bz2
+wget -c https://ftp.gnu.org/gnu/gcc/gcc-"$version"/gcc-"$version".tar.gz
+tar -xzf gcc-"$version".tar.gz
 cd gcc-"$version"
 ./contrib/download_prerequisites
 cd ..
